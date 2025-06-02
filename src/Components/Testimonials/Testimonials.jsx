@@ -6,7 +6,7 @@ import lillian from "../../assets/lillian.jpg";
 import sam from "../../assets/sam.jpg";
 import allanella from "../../assets/allanella.jpg";
 import torren from "../../assets/torren.jpg";
-import JORDI from "../../assets/JORDI.jpg"
+import jordi from "../../assets/jordi.jpg"
 import back from "../../assets/back.jpg";
 import next from "../../assets/next.jpg";
 
@@ -119,7 +119,7 @@ const Testimonials = () => {
           <li>
             <div className="slide">
               <div className="UserInfo">
-                <img className="jordi" src={JORDI} alt="" />
+                <img className="jordi" src={jordi} alt="" />
               </div>
               <div>
                 <h3>Mulungi Abigail</h3>
