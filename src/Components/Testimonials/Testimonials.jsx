@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { ChevronLeft, ChevronRight } from "lucide-react"
-import "./testimonials.css"
+import "./Testimonials.css"
 
 const teamMembers = [
   {
