@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { ArrowRight, Monitor, Smartphone, Car, ExternalLink, Info } from "lucide-react"
+import Image from "next/image"
 
 const Products = () => {
   const [hoveredProduct, setHoveredProduct] = useState<number | null>(null)
@@ -12,8 +13,8 @@ const Products = () => {
       title: "Driver Management System",
       description:
         "Comprehensive solution for fleet management, driver tracking, and route optimization with real-time analytics.",
-      image: "/images/Driver.jpg?height=120&width=120",
-      icon: <Car className="w-8 h-8" />,
+      image: "/images/Driver.jpg",
+      icon: <Car className="w-8 h-8" aria-hidden="true" />,
       features: ["Real-time GPS tracking", "Driver performance analytics", "Route optimization", "Fuel management"],
       category: "Fleet Management",
       status: "Available",
@@ -23,8 +24,8 @@ const Products = () => {
       title: "Mobile Applications",
       description:
         "Custom mobile app development for iOS and Android with cutting-edge features and seamless user experience.",
-      image: "/images/Phone.jpg?height=120&width=120",
-      icon: <Smartphone className="w-8 h-8" />,
+      image: "/images/Phone.jpg",
+      icon: <Smartphone className="w-8 h-8" aria-hidden="true" />,
       features: ["Cross-platform development", "Native performance", "Cloud integration", "Push notifications"],
       category: "Mobile Development",
       status: "Available",
@@ -33,8 +34,8 @@ const Products = () => {
       id: 3,
       title: "Desktop Solutions",
       description: "Powerful desktop applications and enterprise software solutions tailored to your business needs.",
-      image: "/images/Pc.jpg?height=120&width=120",
-      icon: <Monitor className="w-8 h-8" />,
+      image: "/images/Pc.jpg",
+      icon: <Monitor className="w-8 h-8" aria-hidden="true" />,
       features: ["Custom desktop apps", "Enterprise solutions", "Database integration", "Multi-platform support"],
       category: "Desktop Development",
       status: "Available",
@@ -42,7 +43,7 @@ const Products = () => {
   ]
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen  MyProducts">
+    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -71,10 +72,12 @@ const Products = () => {
 
               {/* Image Container */}
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={product.image || "/placeholder.svg"}
+                <Image
+                  src={product.image}
                   alt={product.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
@@ -103,7 +106,7 @@ const Products = () => {
                 {/* Features */}
                 <div className="mb-6">
                   <h4 className="text-sm font-semibold text-gray-900 mb-2 flex items-center gap-2">
-                    <Info className="w-4 h-4" />
+                    <Info className="w-4 h-4" aria-hidden="true" />
                     Key Features
                   </h4>
                   <ul className="space-y-1">
@@ -118,12 +121,18 @@ const Products = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3">
-                  <button className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                  <button 
+                    className="flex-1 bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
+                    aria-label={`Learn more about ${product.title}`}
+                  >
                     Learn More
-                    <ArrowRight className="w-4 h-4" />
+                    <ArrowRight className="w-4 h-4" aria-hidden="true" />
                   </button>
-                  <button className="p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors group/btn">
-                    <ExternalLink className="w-4 h-4 text-gray-600 group-hover/btn:text-blue-600" />
+                  <button 
+                    className="p-3 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors group/btn"
+                    aria-label={`Open ${product.title} in new tab`}
+                  >
+                    <ExternalLink className="w-4 h-4 text-gray-600 group-hover/btn:text-blue-600" aria-hidden="true" />
                   </button>
                 </div>
               </div>
@@ -142,10 +151,16 @@ const Products = () => {
             Get in touch with our expert team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl">
+            <button 
+              className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors shadow-lg hover:shadow-xl"
+              aria-label="Get started with our products"
+            >
               Get Started
             </button>
-            <button className="border border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">
+            <button 
+              className="border border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
+              aria-label="View all products"
+            >
               View All Products
             </button>
           </div>
