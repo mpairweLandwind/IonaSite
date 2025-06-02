@@ -4,7 +4,7 @@ import coda from '../../assets/coda.jpg'
 import codi from '../../assets/codi.jpg'
 import myHand from '../../assets/myHand.jpg'
 import AppDev from '../../assets/AppDev.png'
-import PhoneApp from '../../assets/PhoneApp.png'
+import phoneApp from '../../assets/PhoneApp.png'
 import ManDesk from '../../assets/ManDesk.png'
 
 const Programs = () => {
@@ -23,7 +23,7 @@ const Programs = () => {
       <div className='progra'>
         <img src={codi} alt='' />
         <div className='Capt' >
-          <img src={PhoneApp} alt='' />
+          <img src={phoneApp} alt='' />
           <h2>Mobile App development</h2>
         </div>
       </div>
