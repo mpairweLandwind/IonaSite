@@ -12,7 +12,7 @@ const Products = () => {
       title: "Driver Management System",
       description:
         "Comprehensive solution for fleet management, driver tracking, and route optimization with real-time analytics.",
-      image: "/images/Driver.jpg",
+      image: "/images/Driver.jpg?height=120&width=120",
       icon: <Car className="w-8 h-8" />,
       features: ["Real-time GPS tracking", "Driver performance analytics", "Route optimization", "Fuel management"],
       category: "Fleet Management",
@@ -23,7 +23,7 @@ const Products = () => {
       title: "Mobile Applications",
       description:
         "Custom mobile app development for iOS and Android with cutting-edge features and seamless user experience.",
-      image: "/images/Phone.jpg",
+      image: "/images/Phone.jpg?height=120&width=120",
       icon: <Smartphone className="w-8 h-8" />,
       features: ["Cross-platform development", "Native performance", "Cloud integration", "Push notifications"],
       category: "Mobile Development",
@@ -33,7 +33,7 @@ const Products = () => {
       id: 3,
       title: "Desktop Solutions",
       description: "Powerful desktop applications and enterprise software solutions tailored to your business needs.",
-      image: "/images/Pc.jpg",
+      image: "/images/Pc.jpg?height=120&width=120",
       icon: <Monitor className="w-8 h-8" />,
       features: ["Custom desktop apps", "Enterprise solutions", "Database integration", "Multi-platform support"],
       category: "Desktop Development",
