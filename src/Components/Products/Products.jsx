@@ -42,7 +42,7 @@ const Products = () => {
   ]
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen MyProducts">
+    <section className="py-20 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen  MyProducts">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
