@@ -4,7 +4,7 @@ import coda from '../../assets/coda.jpg'
 import codi from '../../assets/codi.jpg'
 import myHand from '../../assets/myHand.jpg'
 import AppDev from '../../assets/AppDev.png'
-import phoneApp from '../../assets/PhoneApp.png'
+import phoneApp from '../../assets/phoneApp.png'
 import ManDesk from '../../assets/ManDesk.png'
 
 const Programs = () => {
