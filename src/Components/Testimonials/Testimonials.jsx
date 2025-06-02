@@ -56,7 +56,7 @@ const teamMembers = [
   },
 ]
 
-export default function TestimonialsWithCSS() {
+export default function Testimonials() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
 
