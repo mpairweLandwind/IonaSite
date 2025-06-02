@@ -15,7 +15,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Nakunda Lillian",
-    image: "/images/lilian.jpg?height=120&width=120",
+    image: "/images/lillian.jpg?height=120&width=120",
     description:
       "Nankunda Lilian, a young but innovative Software Engineering student at Makerere University - Uganda. As a young lady developer, I am currently practicing Systems Analyst, Web Developer, Mobile Developer and Graphic Designer in the tech space. I specialize in front-end web development and mobile development.",
   },
