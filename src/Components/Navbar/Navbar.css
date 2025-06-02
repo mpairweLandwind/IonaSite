@@ -1,0 +1,79 @@
+nav {
+  width: 100%;
+    background: #00ccff;
+    color: #fff;
+    padding: 10px 5%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Reducing the size of the logo */
+
+.logo {
+  width: 100px;
+  border-radius: 20px;
+}
+
+/* Aligning navbar texts horizontally */
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 5px 20px;
+  font-size: 16px;
+}
+
+.menu_icon {
+  width: 70px;
+  display: none;
+}
+
+/*-----media query-----------*/
+
+@media (max-width: 1000px) {
+  .logo {
+    width: 140px;
+  }
+
+  .nav ul li {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 840px) {
+  nav {
+    padding: 15px 0;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: 0px;
+    bottom: 0;
+    background-color: cornflowerblue;
+    z-index: -1;
+    width: 200px;
+    padding-left: 70px;
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px 40px;
+  }
+
+  .menu_icon {
+    display: block;
+    width: 45px;
+    height: auto;
+    cursor: pointer;
+    align-self: flex-start; /* Moves it to the top */
+    margin-right: 80px; /* Adds space below */
+  }
+  .hideMenu {
+    right: -200px;
+  }
+}

@@ -1,0 +1,26 @@
+.cola{
+    float: left;
+    flex-basis: 40%;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.descrip{
+    flex-basis: 50%;
+    font-size: 23px;
+    
+}
+.collab{
+    justify-content: space-between;
+    margin: 100px auto;
+}
+    
+.descrip h2{
+    font-size: 28px;
+}
+.descrip p{
+    margin-bottom: 15px;
+}
+
+/*................media query...............*/
+

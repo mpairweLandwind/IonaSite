@@ -1,0 +1,68 @@
+
+
+.progs{
+  
+    margin: 80px auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progra img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.progra{
+    flex-basis:  31%;
+    position: relative;
+}
+
+.Capt{
+    
+    height: 30%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.3);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    padding-bottom: 70%;
+    transition: 0.3s;
+
+
+}
+
+.Capt img{
+width: 30%;
+margin-bottom: 10px;
+
+}
+.progra:hover .Capt{
+    opacity: 1;
+    padding-bottom: 10;
+}
+
+/*..............media queries............*/
+
+@media(max-width:650px){
+    .progs{
+        flex-direction: column;
+    }
+
+    .progra{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

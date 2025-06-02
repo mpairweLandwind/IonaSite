@@ -1,0 +1,45 @@
+.MyProducts {
+  margin-top: 200px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-direction: row; /* Ensure horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  height: auto; /* Adjust height based on content */
+}
+
+.product_image {
+  width: auto;
+  max-width: 100%; /* Keep it responsive within container */
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* For medium screens */
+@media (max-width: 980px) {
+  .product_image {
+      max-width: 300px;
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 760px) {
+  .product_image {
+      max-width: 250px;
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 649px) {
+  .MyProducts {
+      flex-direction: row; /* Keep them in a row even on smaller screens */
+      gap: 10px; /* Reduce gap to prevent overflow */
+  }
+  .product_image {
+      max-width: 100%; /* Adjust size based on container */
+  }
+}
