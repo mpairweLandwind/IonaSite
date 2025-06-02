@@ -8,49 +8,49 @@ const teamMembers = [
   {
     id: 1,
     name: "Nyombi Elijah",
-    image: "/elijah.jpg?height=120&width=120",
+    image: "/images/elijah.jpg?height=120&width=120",
     description:
       "Elijah Nyombi is one of the Directors for iONA Tech, a cutting-edge software company committed to driving innovation and providing impactful technological solutions. With a rich background in journalism, public health, and digital marketing communication, Elijah leads the company with a focus on digital transformation and high-quality software development.",
   },
   {
     id: 2,
     name: "Nakunda Lillian",
-    image: "/lilian.jpg?height=120&width=120",
+    image: "/images/lilian.jpg?height=120&width=120",
     description:
       "Nankunda Lilian, a young but innovative Software Engineering student at Makerere University - Uganda. As a young lady developer, I am currently practicing Systems Analyst, Web Developer, Mobile Developer and Graphic Designer in the tech space. I specialize in front-end web development and mobile development.",
   },
   {
     id: 3,
     name: "Baliddawa Allan",
-    image: "/allanella.jpg?height=120&width=120",
+    image: "/images/allanella.jpg?height=120&width=120",
     description:
       "I am a passionate and skilled Fullstack Web Developer with a strong background in both front-end and back-end development. I specialize in building responsive, user-friendly, and scalable web applications using modern technologies including ReactJS, Java (Spring Boot), and Node.js.",
   },
   {
     id: 4,
     name: "Mulungi Abigail",
-    image: "/jordi.jpg?height=120&width=120",
+    image: "/images/jordi.jpg?height=120&width=120",
     description:
       "Abigail is a passionate JavaScript developer with a keen eye for innovation. With a strong focus on crafting exceptional software experiences, she excels in designing and developing scalable web applications and desktop solutions.",
   },
   {
     id: 5,
     name: "Mpairwe Lauben",
-    image: "/alien.jpg?height=120&width=120",
+    image: "/images/alien.jpg?height=120&width=120",
     description:
       "With over five years of hands-on experience, Mpairwe Lauben is a dynamic software engineer with a passion for crafting intelligent, scalable, and user-centric digital solutions. His core expertise lies at the intersection of mobile application development, cloud-native systems, and machine learning technologies.",
   },
   {
     id: 6,
     name: "Katongole Samuel",
-    image: "/sam.jpg?height=120&width=120",
+    image: "/images/sam.jpg?height=120&width=120",
     description:
       "Samuel is a passionate Java Developer dedicated to crafting software that inspires progress and delivers value. Skilled in building intuitive, functional desktop and web applications, he combines technical expertise with a heart for service, collaboration and faith-driven purpose.",
   },
   {
     id: 7,
     name: "Amumpire Torren",
-    image: "/torren.jpg?height=120&width=120",
+    image: "/images/torren.jpg?height=120&width=120",
     description:
       "As a digital enthusiast, AI activist and skilled graphics designer, I merge creativity with technological expertise to drive innovative solutions. I advocate for responsible AI development and harness its potential to enhance visual storytelling.",
   },
