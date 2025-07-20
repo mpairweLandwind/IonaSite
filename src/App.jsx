@@ -9,28 +9,47 @@ import Testimonials from './Components/Testimonials/Testimonials'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
 
-
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Tech />
+      
+      {/* Hero Section */}
+      <section id="hero">
+        <Tech />
+      </section>
 
-      <div className='navContainer'>
+      {/* Services Section */}
+      <section id="descrip">
         <MyTitle />
+      </section>
+
+      {/* Programs Section */}
+      <section id="programs">
         <Programs />
+      </section>
+
+      {/* About Section */}
+      <section id="about">
         <About />
+      </section>
 
+      {/* Products Section */}
+      <section id="MyProducts">
+        <Products />
+      </section>
 
-      </div>
+      {/* Team Section */}
+      <section id="testimonials-section">
+        <Testimonials />
+      </section>
 
-      <Products />
+      {/* Contact Section */}
+      <section id="contact_us">
+        <Contacts />
+      </section>
 
-      <Testimonials />
-
-      <Contacts />
-
-      <Footer/>
+      <Footer />
     </div>
   )
 }
