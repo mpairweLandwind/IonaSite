@@ -53,7 +53,8 @@ const Tech = () => {
             <h1 className="tech-title">
               Let's create something 
               <span className="tech-accent"> extraordinary</span> 
-              together!
+              <span className="tech-accent">  </span> 
+               together!
             </h1>
             
             <p className="tech-description">
