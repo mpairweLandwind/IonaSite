@@ -5,9 +5,10 @@ import Programs from './Components/Programs/Programs'
 import MyTitle from './Components/MyTitle/MyTitle'
 import About from './Components/About/About'
 import Products from './Components/Products/Products'
-import Testimonials from './Components/Testimonials/Testimonials'
 import Contacts from './Components/Contacts/Contacts'
 import Footer from './Components/Footer/Footer'
+import Team from './Components/Team/Team'
+import TestimonialsPage from './Components/Testimonials/Testimonials'
 
 const App = () => {
   return (
@@ -41,12 +42,18 @@ const App = () => {
 
       {/* Team Section */}
       <section id="testimonials-section">
-        <Testimonials />
+        <Team />
       </section>
 
       {/* Contact Section */}
       <section id="contact_us">
         <Contacts />
+      </section>
+
+
+       {/* Testimonials Section */}
+      <section id="testimonials">
+        <TestimonialsPage/>
       </section>
 
       <Footer />

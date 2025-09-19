@@ -10,7 +10,7 @@ const Products = () => {
     {
       id: 1,
       image: Driver,
-      title: "Driver Management System",
+      title: "Data Management System",
       description: "Comprehensive fleet management solution for modern businesses",
       icon: <Code className="w-6 h-6" />,
       category: "Software Solutions"

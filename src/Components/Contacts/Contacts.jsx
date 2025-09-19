@@ -69,7 +69,7 @@ const Contacts = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       label: "Phone",
-      value: "+256700966715",
+      value: "+256700966715", 
       href: "tel:+256700966715",
     },
     {
